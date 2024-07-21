@@ -6,6 +6,7 @@ const products = [
 ];
 
 window.onload = function() {
+    console.log('Window loaded');
     const productList = document.getElementById('product-list');
     products.forEach(product => {
         const productElement = document.createElement('div');
@@ -18,6 +19,7 @@ window.onload = function() {
             <button onclick="addToCart(${product.id})" class="bg-gray-800 text-white px-4 py-2 rounded">장바구니에 추가</button>
         `;
         productList.appendChild(productElement);
+        console.log('Product added: ', product.name);
     });
 }
 
