@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-gray-800">장바구니</h1>
+    </header>
+    <main class="p-4">
+        <section id="cart-list" class="bg-white p-4 shadow-md rounded-lg">
+            <!-- 장바구니 목록이 여기에 표시됩니다 -->
+        </section>
+        <div class="text-right mt-4">
+            <button onclick="goToCheckout()" class="bg-gray-800 text-white px-4 py-2 rounded">결제하기</button>
+        </div>
+    </main>
+    <footer class="bg-white shadow-md p-4 text-center text-gray-600 mt-4">
+        <p>&copy; 2024 Nulle Store</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
