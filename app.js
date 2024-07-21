@@ -5,10 +5,6 @@ const products = [
     { id: 3, name: '눌레 티셔츠', price: 25000, description: '편안한 눌레 티셔츠입니다.', image: 'https://github.com/NIAC12/nulle-store/blob/main/images/Tshirts.jpg?raw=true' },
 ];
 
-window.onload = function() {
-    displayProducts(products);
-}
-
 function displayProducts(products) {
     const productList = document.getElementById('product-list');
     productList.innerHTML = '';
@@ -34,3 +30,7 @@ function addToCart(productId) {
     localStorage.setItem('cart', JSON.stringify(cart));
     alert(`${product.name}이(가) 장바구니에 추가되었습니다.`);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    displayProducts(products);
+});
