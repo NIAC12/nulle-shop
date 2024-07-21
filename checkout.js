@@ -12,3 +12,4 @@ document.getElementById('checkout-form').onsubmit = function(event) {
         alert('모든 필드를 채워주세요.');
     }
 }
+
