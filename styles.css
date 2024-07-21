@@ -19,10 +19,11 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 1rem;
     margin: 1rem 0;
+    text-align: center;
 }
 
 .product-card img {
-    width: 50%; /* 이미지 너비를 50%로 설정 */
+    max-width: 200px; /* 이미지 너비를 최대 200px로 제한 */
     height: auto; /* 비율을 유지하며 높이를 자동으로 설정 */
     border-radius: 0.5rem;
     object-fit: contain;
