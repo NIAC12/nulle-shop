@@ -22,8 +22,8 @@ body {
 }
 
 .product-card img {
-    width: 100%;
-    height: auto;
+    width: 50%; /* 이미지 너비를 50%로 설정 */
+    height: auto; /* 비율을 유지하며 높이를 자동으로 설정 */
     border-radius: 0.5rem;
     object-fit: contain;
 }
@@ -73,4 +73,3 @@ body {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
-
