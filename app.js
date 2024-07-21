@@ -53,7 +53,7 @@ function displayProducts(products) {
         const productElement = document.createElement('div');
         productElement.classList.add('bg-white', 'p-4', 'shadow-md', 'rounded-lg', 'text-center');
         productElement.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" class="w-full h-64 object-cover mb-4 rounded-lg">
+            <img src="${product.image}" alt="${product.name}" class="w-full h-64 object-contain mb-4 rounded-lg">
             <h2 class="text-xl font-bold mb-2">${product.name}</h2>
             <p class="text-gray-600 mb-2">${product.description}</p>
             <p class="text-gray-800 font-semibold mb-4">${formattedPrice}</p>
