@@ -1,4 +1,4 @@
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
     const userSection = document.getElementById('user-section');
     const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
@@ -13,7 +13,7 @@ window.onload = function() {
             <a href="signup.html" class="bg-gray-800 text-white px-4 py-2 rounded">회원가입</a>
         `;
     }
-}
+});
 
 function logout() {
     localStorage.removeItem('loggedInUser');
