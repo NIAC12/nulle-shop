@@ -7,42 +7,6 @@ const products = [
 
 window.onload = function() {
     displayProducts(products);
-
-    const imageUploadInput = document.getElementById('image-upload');
-    const preview = document.getElementById('preview');
-
-    imageUploadInput.addEventListener('change', function(event) {
-        const file = event.target.files[0];
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            preview.innerHTML = `<img src="${e.target.result}" alt="Image Preview" class="w-full h-64 object-cover">`;
-        }
-        reader.readAsDataURL(file);
-    });
-
-    const productUploadForm = document.getElementById('product-upload-form');
-    productUploadForm.onsubmit = function(event) {
-        event.preventDefault();
-        const name = document.getElementById('product-name').value;
-        const price = document.getElementById('product-price').value;
-        const description = document.getElementById('product-description').value;
-        const imageFile = document.getElementById('image-upload').files[0];
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const newProduct = {
-                id: products.length + 1,
-                name: name,
-                price: parseInt(price, 10),
-                description: description,
-                image: e.target.result
-            };
-            products.push(newProduct);
-            displayProducts(products);
-            productUploadForm.reset();
-            preview.innerHTML = `<span class="text-gray-600">여기에 이미지 미리보기가 표시됩니다</span>`;
-        }
-        reader.readAsDataURL(imageFile);
-    }
 }
 
 function displayProducts(products) {
