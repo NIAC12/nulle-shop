@@ -17,7 +17,7 @@ function displayProducts(products) {
         const productElement = document.createElement('div');
         productElement.classList.add('product-card');
         productElement.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" class="w-full h-64 object-contain mb-4 rounded-lg">
+            <img src="${product.image}" alt="${product.name}" class="product-image mb-4">
             <h2 class="text-xl font-bold mb-2">${product.name}</h2>
             <p class="text-gray-600 mb-2">${product.description}</p>
             <p class="text-gray-800 font-semibold mb-4">${formattedPrice}</p>
