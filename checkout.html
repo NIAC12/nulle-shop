@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 페이지</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-gray-800">결제 페이지</h1>
+    </header>
+    <main class="p-4">
+        <form id="checkout-form" class="bg-white p-4 shadow-md rounded-lg">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700">이름</label>
+                <input type="text" id="name" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label for="address" class="block text-gray-700">주소</label>
+                <input type="text" id="address" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label for="card" class="block text-gray-700">카드 번호</label>
+                <input type="text" id="card" class="w-full p-2 border rounded">
+            </div>
+            <div class="text-right">
+                <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded">결제하기</button>
+            </div>
+        </form>
+    </main>
+    <footer class="bg-white shadow-md p-4 text-center text-gray-600 mt-4">
+        <p>&copy; 2024 Nulle Store</p>
+    </footer>
+    <script src="checkout.js"></script>
+</body>
+</html>
