@@ -10,13 +10,28 @@
     <header>
         <h1>눌레굿즈센터</h1>
         <input type="text" id="searchInput" placeholder="Search for products...">
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="clothing">Clothing</option>
+            <option value="accessories">Accessories</option>
+        </select>
+        <button onclick="showPurchaseHistory()">구매 이력</button>
     </header>
     <main>
         <section id="products">
             <h2>눌레의 체취가 뭍은 물건</h2>
         </section>
+        <section id="recommended-products">
+            <h2>추천 상품</h2>
+            <div id="recommendation-container"></div>
+        </section>
         <section id="cart">
             <h2>눌레카트</h2>
+        </section>
+        <section id="purchase-history" style="display: none;">
+            <h2>구매 이력</h2>
+            <div id="purchase-history-container"></div>
+            <button onclick="hidePurchaseHistory()">닫기</button>
         </section>
     </main>
     <footer>
