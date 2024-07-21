@@ -3,40 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>눌레굿즈센터</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nulle Store</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>눌레굿즈센터</h1>
-        <input type="text" id="searchInput" placeholder="Search for products...">
-        <select id="categoryFilter">
-            <option value="all">All Categories</option>
-            <option value="clothing">Clothing</option>
-            <option value="accessories">Accessories</option>
-        </select>
-        <button onclick="showPurchaseHistory()">구매 이력</button>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-gray-800">Nulle Store</h1>
     </header>
-    <main>
-        <section id="products">
-            <h2>눌레의 체취가 뭍은 물건</h2>
-        </section>
-        <section id="recommended-products">
-            <h2>추천 상품</h2>
-            <div id="recommendation-container"></div>
-        </section>
-        <section id="cart">
-            <h2>눌레카트</h2>
-        </section>
-        <section id="purchase-history" style="display: none;">
-            <h2>구매 이력</h2>
-            <div id="purchase-history-container"></div>
-            <button onclick="hidePurchaseHistory()">닫기</button>
+    <main class="p-4">
+        <section id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 제품 목록이 여기에 표시됩니다 -->
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 My Shopping Mall</p>
+    <footer class="bg-white shadow-md p-4 text-center text-gray-600 mt-4">
+        <p>&copy; 2024 Nulle Store</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
