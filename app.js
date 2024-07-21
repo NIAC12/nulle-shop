@@ -1,8 +1,8 @@
 // 제품 목록 데이터 (이미지 파일 경로를 업데이트)
 const products = [
-    { id: 1, name: '눌레 키링', price: 10000, description: '귀여운 눌레 키링입니다.', image: 'KakaoTalk_20240721_204838128.jpg' },
-    { id: 2, name: '눌레 스마트폰 홀더', price: 15000, description: '편리한 눌레 스마트폰 홀더입니다.', image: 'KakaoTalk_20240721_204838128_01.jpg' },
-    { id: 3, name: '눌레 티셔츠', price: 20000, description: '편안한 눌레 티셔츠입니다.', image: 'KakaoTalk_20240721_204922520.jpg' },
+    { id: 1, name: '눌레 키링', price: 10000, description: '귀여운 눌레 키링입니다.', image: '/mnt/data/keyring.jpg' },
+    { id: 2, name: '눌레 스마트폰 홀더', price: 15000, description: '편리한 눌레 스마트폰 홀더입니다.', image: '/mnt/data/SPholder.jpg' },
+    { id: 3, name: '눌레 티셔츠', price: 20000, description: '편안한 눌레 티셔츠입니다.', image: '/mnt/data/Tshirts.jpg' },
 ];
 
 window.onload = function() {
