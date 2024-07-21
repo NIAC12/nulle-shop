@@ -15,7 +15,7 @@ function displayProducts(products) {
     products.forEach(product => {
         const formattedPrice = product.price.toLocaleString('ko-KR') + ' ₩';
         const productElement = document.createElement('div');
-        productElement.classList.add('bg-white', 'p-4', 'shadow-md', 'rounded-lg', 'text-center');
+        productElement.classList.add('product-card');
         productElement.innerHTML = `
             <img src="${product.image}" alt="${product.name}" class="w-full h-64 object-contain mb-4 rounded-lg">
             <h2 class="text-xl font-bold mb-2">${product.name}</h2>
